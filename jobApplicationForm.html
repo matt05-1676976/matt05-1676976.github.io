@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Job Application</title>
+    </head>
+    <body>
+        <h2 style="color:crimson">Job Application</h2>
+
+        <form action="http://gclass.alexburner.com/formtest.php" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="field">
+                    <label>First Name:</label> 
+                    <input type="text" name="name" placeholder="ex. James">
+                    <label>Last Name:</label> 
+                    <input type="text" name="name" placeholder="ex. Robinson">
+                </div>
+                <div class="field">
+                    <label>Street Address:</label> 
+                    <input type="text" name="street">
+                    <label>City:</label> 
+                    <input type="text" name="city" placeholder="Ex. Sammamish">
+                    <label>State:</label> 
+                    <select name="state">
+                        <option value="" selected="true">Choose a State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                    <label>ZIP:</label> 
+                    <input type="text" name="zip">
+                </div>
+                <div class="field">
+                    <label>Is this your permanent, mailing, or both?</label>
+                    <select id="addresstype" size="3">
+                        <option value="Permanent">Permanent</option>
+                        <option value="Mailing">Mailing</option>
+                        <option value="Both">Both</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Parental Contact:</label>
+                    <select name="parent">                        
+                        <option value="" selected="true">Choose a Parent</option>
+                        <option value="mother">Mother</option>
+                        <option value="father">Father</option>
+                    </select>
+                    <label>Parent Phone Number:</label>
+                    <input type="text" name="phone_number">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Account</legend>
+                <label>Phone Number:</label>
+                <input type="text" name="phone_number">
+                <div class="field">
+                    <label>Email:</label> 
+                    <input type="password" name="email">
+                </div>
+                <div class="field">
+                    <label>Confirm Email:</label> 
+                    <input type="password" name="email">
+                    <button type="button" onclick="alert('We\'ve sent a confirmation email')">Confirm email</button>
+                </div>
+                <div class="field">
+                    <label>Password:</label> 
+                    <input type="password" name="password">
+                </div>
+                <div class="field">
+                    <label>Repeat password:</label> 
+                    <input type="password" name="password_r">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Job Info</legend>
+                <div class="field">
+                    <label>Job Type:</label>
+                    <input list="jobs">
+                    <datalist id="jobs">
+                        <option value="janitor">
+                            <option value="filer">
+                            <option value="reporter">
+                            <option value="writer">
+                            <option value="doctor">
+                    </datalist>
+                </div>
+                <div class="field">
+                    <label>Past Experience in: (check all that apply)</label>
+                    <ul>
+                        <li><input type="checkbox" name="job_j" value="janitor">Janitor</li>
+                        <li><input type="checkbox" name="job_f" value="filer">Filer</li>
+                        <li><input type="checkbox" name="job_r" value="reporter">Reporter</li>
+                        <li><input type="checkbox" name="job_w" value="writer">Writer</li>
+                        <li><input type="checkbox" name="job_d" value="doctor">Doctor</li>
+                        <li><input type="checkbox" name="job_o" value="other">Other <input type="text" name="other"></li>
+                        <li><input type="checkbox" name="job_n" value="none">None</li>
+                    </ul>
+                </div>
+                <div class="field">
+                    <label>Are you employed now?</label> 
+                    <input type="radio" name="legal" value="yes">Yes
+                    <input type="radio" name="legal" value="no">No
+                </div>
+                <div class="field">
+                    <label>Have you ever applied here before?</label> 
+                    <input type="radio" name="legal" value="yes">Yes
+                    <input type="radio" name="legal" value="no">No  
+                </div>
+                <div class="field">
+                    <label>Salary Desired: </label>
+                    0<input type="range" name="salary" value="50">10,000
+                </div>
+                <div class="field">
+                    <label>When can you start?</label>
+                    <input type="date" name="date">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <div class="field">
+                    <label>College Name:</label>
+                    <input type="text" name="college">
+                    <label>Number of years attended:</label>
+                    <input type="number" name="number">
+                </div>
+                <div class="field">
+                    <label>Did you graudate?</label>
+                    <input type="radio" name="legal" value="yes">Yes
+                    <input type="radio" name="legal" value="no">No
+                </div>
+                <div class="field">
+                    <label>What major?</label>
+                    <input type="text" name="major">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Availability</legend>
+                    <div class="field">
+                        <label>Are you legally able to be employed in this country?</label> 
+                        <input type="radio" name="legal" value="yes">Yes
+                        <input type="radio" name="legal" value="no">No
+                    </div>
+                    <div class="field">
+                        <label>What type of position are you seeking? (check all that apply)</label>
+                        <ul>
+                            <li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
+                            <li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
+                            <li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
+                            <li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
+                        </ul>
+                    </div>
+                    <div class="field">
+                        <label>Hours available</label>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                            <tr>
+                                <th>From</th>
+                                <td><input type="time" size="5" name="su_from"></td>
+                                <td><input type="time" size="5" name="mo_from"></td>
+                                <td><input type="time" size="5" name="tu_from"></td>
+                                <td><input type="time" size="5" name="we_from"></td>
+                                <td><input type="time" size="5" name="th_from"></td>
+                                <td><input type="time" size="5" name="fr_from"></td>
+                                <td><input type="time" size="5" name="sa_from"></td>
+                            </tr>
+                            <tr>
+                                <th>Until</th>
+                                <td><input type="time" size="5" name="su_until"></td>
+                                <td><input type="time" size="5" name="mo_until"></td>
+                                <td><input type="time" size="5" name="tu_until"></td>
+                                <td><input type="time" size="5" name="we_until"></td>
+                                <td><input type="time" size="5" name="th_until"></td>
+                                <td><input type="time" size="5" name="fr_until"></td>
+                                <td><input type="time" size="5" name="sa_until"></td>
+                            </tr>
+                        </table>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Statement</legend>
+                <div class="field">
+                    <label>Why do you deserve this job?</label><br>
+                    <textarea name="deserve" rows="6" cols="60"></textarea>
+                </div>
+                <div class="field">
+                    <label>Describe a recent project:</label><br>
+                    <textarea name="project" rows="6" cols="60"></textarea>
+                </div>
+                <div class="field">
+                    <label>Tell us about your life story:</label><br>
+                    <textarea name="project" rows="6" cols="60"></textarea>
+                </div>
+            </fieldset>
+        
+            <input type="submit" value="Submit form">
+        </form>
+    </body>
+</html>
