@@ -4311,24 +4311,3 @@
 			}
 
 		}
-
-		div.gallery {
-		  margin: 5px;
-		  border: 1px solid #ccc;
-		  float: left;
-		  width: 700px;
-		}
-		
-		div.gallery:hover {
-		  border: 3px solid rgb(0, 68, 255);
-		}
-		
-		div.gallery img {
-		  width: 50%;
-		  height: auto;
-		}
-		
-		div.desc {
-		  padding: 5px;
-		  text-align: center;
-		}
